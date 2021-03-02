@@ -1,14 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {Accordion} from "./components/Accordion/Accordion";
 
 function App() {
     return (
         <div>
             <AppTitle/>
-            <Rating />
-            <Accordion />
-            <Rating />
+            <Rating/>
+            <Accordion/>
+            <Rating/>
         </div>
     );
 }
@@ -20,25 +20,18 @@ function AppTitle() {
 function Rating() {
     return (
         <div>
-            <div>star</div>
-            <div>star</div>
-            <div>star</div>
-            <div>star</div>
-            <div>star</div>
+            <Star/>
+            <Star/>
+            <Star/>
+            <Star/>
+            <Star/>
         </div>
     );
 }
 
-function Accordion() {
+function Star() {
     return (
-        <div>
-            <h3>Меню</h3>
-            <ul>
-                <li>Пункт 1</li>
-                <li>Пункт 2</li>
-                <li>Пункт 3</li>
-            </ul>
-        </div>
+        <div>star</div>
     );
 }
 
